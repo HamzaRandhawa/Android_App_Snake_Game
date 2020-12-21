@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/snake_wall_collision_1"
+    tools:context=".Ending_Activity"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <Button
+        android:id="@+id/id_btn_Save"
+        android:layout_width="96dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="348dp"
+        android:background="@drawable/go"
+        android:onClick="On_Save_Button_Click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/id_editText_Name" />
+
+    <EditText
+        android:id="@+id/id_editText_Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/button"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="29sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_btn_Save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_text_View_Name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_text_View_Name"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:alpha=".8"
+        android:background="@drawable/button"
+        android:text="  Enter Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/id_editText_Name"
+        app:layout_constraintEnd_toStartOf="@+id/id_editText_Name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id_editText_Name" />
+</android.support.constraint.ConstraintLayout>

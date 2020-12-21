@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamePlay_Activity">
+
+    <com.example.randhawa.snake_game.views.Snake_View
+        android:id="@+id/snake_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/back_5"
+
+
+        />
+
+    <Button
+        android:id="@+id/id_btn_Continue"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="114dp"
+        android:alpha=".7"
+        android:background="@drawable/button_3"
+        android:onClick="On_Play"
+        android:text="@string/Continue"
+        android:textSize="28sp"
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/id_btn_Exit"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="339dp"
+        android:alpha=".7"
+        android:background="@drawable/button_3"
+        android:onClick="On_Exit_Click"
+        android:text="@string/exit"
+        android:textSize="29sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/id_btn_Home"
+
+
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="284dp"
+        android:alpha=".7"
+        android:background="@drawable/button_3"
+        android:onClick="On_Home_Click"
+        android:text="@string/home"
+        android:textSize="29sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/id_btn_Save"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginTop="229dp"
+        android:alpha=".7"
+        android:background="@drawable/button_3"
+        android:onClick="On_Save_Click"
+        android:text="@string/save"
+        android:textSize="29sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/id_btn_Reset"
+
+        android:layout_width="200dp"
+
+
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentLeft="true"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="173dp"
+        android:alpha=".7"
+        android:background="@drawable/button_3"
+        android:onClick="On_Reset_Click"
+        android:text="@string/reset"
+        android:textSize="29sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/id_text_Highest"
+        android:layout_width="38dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="219dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="0dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/id_btn_Play"
+        android:layout_width="46dp"
+        android:layout_height="58dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="271dp"
+        android:layout_marginBottom="445dp"
+        android:background="@drawable/play_1"
+        android:onClick="On_Play"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/id_btn_Pause"
+        android:layout_width="47dp"
+
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="270dp"
+        android:layout_marginBottom="444dp"
+        android:background="@drawable/pause_4"
+        android:onClick="On_Pause" />
+
+    <ImageView
+        android:id="@+id/id_img_score"
+
+
+        android:layout_width="145dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        app:srcCompat="@drawable/score_1" />
+
+    <TextView
+        android:id="@+id/id_text_score"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/id_img_score"
+        android:layout_alignRight="@+id/id_img_score"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/id_img_highScore"
+        android:layout_width="87dp"
+        android:layout_height="48dp"
+        android:layout_alignStart="@+id/id_text_Highest"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-38dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/high_score_2" />
+
+
+    <ImageView
+        android:id="@+id/id_img_menu"
+
+        android:layout_width="282dp"
+
+        android:layout_height="338dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="84dp"
+        android:alpha=".9"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/wood_2_cropped" />
+
+    <ImageView
+        android:id="@+id/id_img_snake_wall_collide"
+        android:layout_width="385dp"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/id_btn_Continue"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-69dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimary"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/snake_wall_collision_1" />
+
+
+</RelativeLayout>

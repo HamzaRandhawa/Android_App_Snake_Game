@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Snake_Game</string>
+    <string name="todo">TODO</string>
+    <string name="exit">exit</string>
+    <string name="home">Home</string>
+    <string name="save">Save</string>
+    <string name="reset">Reset</string>
+
+    <string name="Continue">Continue</string>
+    <string name="todo_1">TODO</string>
+    <string name="todo_2">TODO</string>
+    <string name="todo_3">TODO</string>
+
+</resources>
